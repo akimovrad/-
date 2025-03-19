@@ -1,0 +1,50 @@
+.characters{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #1e1e1e;
+
+    &-flex{
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: center;
+        gap: 20px;
+        max-width: 1200px;
+    }
+
+    &-card{
+    display: flex;
+    flex-direction: row;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;  
+    }
+
+    &-image{
+        width: 120px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &-info{
+        padding: 10px;
+        flex: 1;
+    }
+
+    &-name{
+        font-size: 20px;
+        font-weight: bold;
+        color: #f0f0f0;
+    }
+
+    &-status{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+    }
+}
