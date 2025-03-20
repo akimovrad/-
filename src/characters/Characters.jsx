@@ -35,7 +35,7 @@ const Characters = () => {
                                 {character.name}
                             </h3>
                             <p className="characters-status">
-                                {character.status} - {character.species}
+                                <span>{character.status} - {character.species}</span>
                             </p>
                             <p>
                                 <strong>Last known location:</strong>

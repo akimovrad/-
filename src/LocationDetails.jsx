@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from 'axios';
+import './LocationDetails.scss'
 
 const LocationDetails = () => {
-    const { id } = useParams(); // Получаем ID локации из URL
+    const { id } = useParams(); 
     const [location, setLocation] = useState(null);
 
     useEffect(() => {
@@ -21,7 +22,7 @@ const LocationDetails = () => {
     }
 
     return (
-        <div>
+        <div className="location">
             <h2>{location.name}</h2>
             <p><strong>Type:</strong> {location.type}</p>
             <p><strong>Dimension:</strong> {location.dimension}</p>

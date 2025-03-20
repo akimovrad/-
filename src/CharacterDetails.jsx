@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from 'axios';
+import './CharacterDetails.scss'
 
 const CharacterDetails = () => {
     const { id } = useParams(); 
@@ -21,7 +22,7 @@ const CharacterDetails = () => {
     }
 
     return (
-        <div>
+        <div className="detail">
             <h2>{character.name}</h2>
             <img src={character.image} alt={character.name} />
             <p><strong>Status:</strong> {character.status}</p>
