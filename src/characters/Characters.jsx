@@ -5,7 +5,7 @@ import './characters.scss';
 
 const Characters = () => {
     const [data, setData] = useState([]);
-    const [ids, setIds] = useState([1, 2, 3, 4, 5, 6]);
+    const [ids] = useState([1, 2, 3, 4, 5, 6]);
     const navigate = useNavigate();
 
     useEffect(() => {
